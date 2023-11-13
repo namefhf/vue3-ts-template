@@ -1,16 +1,16 @@
-import { ref } from "vue";
+import { ref } from 'vue';
 // import { TAP_OFFSET } from "../utils";
 export const TAP_OFFSET = 5;
-type Direction = "" | "vertical" | "horizontal";
+type Direction = '' | 'vertical' | 'horizontal';
 
 function getDirection(x: number, y: number) {
   if (x > y) {
-    return "horizontal";
+    return 'horizontal';
   }
   if (y > x) {
-    return "vertical";
+    return 'vertical';
   }
-  return "";
+  return '';
 }
 
 export function useTouch() {
@@ -20,18 +20,18 @@ export function useTouch() {
   const deltaY = ref(0);
   const offsetX = ref(0);
   const offsetY = ref(0);
-  const direction = ref<Direction>("");
+  const direction = ref<Direction>('');
   const isTap = ref(true);
 
-  const isVertical = () => direction.value === "vertical";
-  const isHorizontal = () => direction.value === "horizontal";
+  const isVertical = () => direction.value === 'vertical';
+  const isHorizontal = () => direction.value === 'horizontal';
 
   const reset = () => {
     deltaX.value = 0;
     deltaY.value = 0;
     offsetX.value = 0;
     offsetY.value = 0;
-    direction.value = "";
+    direction.value = '';
     isTap.value = true;
   };
 

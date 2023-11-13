@@ -1,28 +1,29 @@
-import { createApp } from "vue";
-import "./style.css";
-import App from "./App.vue";
-import "@unocss/reset/normalize.css";
-import "uno.css";
-import router from "./router";
+import { createApp } from 'vue';
+import './style.css';
+import App from './App.vue';
+import '@unocss/reset/normalize.css';
+import 'uno.css';
+import router from './router';
 // Vant 中有个别组件是以函数的形式提供的，包括 Toast，Dialog，Notify 和 ImagePreview 组件。在使用函数组件时，unplugin-vue-components 无法解析自动注册组件，导致 @vant/auto-import-resolver 无法解析样式，因此需要手动引入样式
 // Toast
-import "vant/es/toast/style";
+import 'vant/es/toast/style';
 
 // Dialog
-import "vant/es/dialog/style";
+import 'vant/es/dialog/style';
 
 // Notify
-import "vant/es/notify/style";
+import 'vant/es/notify/style';
 
 // ImagePreview
-import "vant/es/image-preview/style";
+import 'vant/es/image-preview/style';
 // import ElementPlus from "element-plus";
 // import "element-plus/dist/index.css";
-import { createPinia } from "pinia";
+import { createPinia } from 'pinia';
 const pinia = createPinia();
 
-import FoatingBubble from "../src/components/floating-bubble";
+import FoatingBubble from '../src/components/floating-bubble';
 const app = createApp(App);
-app.use(router).use(pinia).use(FoatingBubble).mount("#app");
+app.use(router).use(pinia).use(FoatingBubble).mount('#app');
 type person = [string, number];
 type a = person[number];
+const a = 1;

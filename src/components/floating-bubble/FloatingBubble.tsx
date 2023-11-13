@@ -1,11 +1,11 @@
-import { CSSProperties } from "vue";
-import { useTouch } from "./useTouch";
-import { useRect, useEventListener } from "@vant/use";
+import { CSSProperties } from 'vue';
+import { useTouch } from './useTouch';
+import { useRect, useEventListener } from '@vant/use';
 export function closest(arr: number[], target: number) {
   return arr.reduce((pre, cur) => (Math.abs(pre - target) < Math.abs(cur - target) ? pre : cur));
 }
 export default defineComponent({
-  name: "FloatingBubble",
+  name: 'FloatingBubble',
   inheritAttrs: false,
   props: {
     gap: {
@@ -14,19 +14,19 @@ export default defineComponent({
     },
     axis: {
       type: String,
-      default: "y",
-      validate: (v: string) => ["x", "y", "xy"].includes(v),
+      default: 'y',
+      validate: (v: string) => ['x', 'y', 'xy'].includes(v),
     },
     magnetic: {
       type: String,
-      default:"x"
+      default: 'x',
     },
     offset: {
       type: Object,
       default: () => ({ x: -1, y: -1 }),
     },
   },
-  emits:["update:offset","offsetChange","click"],
+  emits: ['update:offset', 'offsetChange', 'click'],
   setup(props, { slots, attrs, emit }) {
     const rootRef = ref<HTMLDivElement>();
     const windowWidth = ref(window.innerWidth);
@@ -55,11 +55,11 @@ export default defineComponent({
       const x = `${state.value.x}px`;
       const y = `${state.value.y}px`;
       style.transform = `translate3d(${x},${y},0)`;
-      style.width = "50px";
-      style.height = "50px";
-      style.transition = "all ease-in-out .5s";
+      style.width = '50px';
+      style.height = '50px';
+      style.transition = 'all ease-in-out .5s';
       if (dragging.value || !initialized) {
-        style.transition = "none";
+        style.transition = 'none';
       }
       return style;
     });
@@ -90,20 +90,20 @@ export default defineComponent({
     };
     const onTouchMove = (e: TouchEvent) => {
       e.preventDefault();
-      console.error("onTouchMove");
+      console.error('onTouchMove');
       touch.move(e);
 
-      if (props.axis === "lock") return;
+      if (props.axis === 'lock') return;
 
       if (!touch.isTap.value) {
-        if (props.axis === "x" || props.axis === "xy") {
+        if (props.axis === 'x' || props.axis === 'xy') {
           let nextX = prevX + touch.deltaX.value;
           if (nextX < boundary.value.left) nextX = boundary.value.left;
           if (nextX > boundary.value.right) nextX = boundary.value.right;
           state.value.x = nextX;
         }
 
-        if (props.axis === "y" || props.axis === "xy") {
+        if (props.axis === 'y' || props.axis === 'xy') {
           let nextY = prevY + touch.deltaY.value;
           if (nextY < boundary.value.top) nextY = boundary.value.top;
           if (nextY > boundary.value.bottom) nextY = boundary.value.bottom;
@@ -115,23 +115,23 @@ export default defineComponent({
           x: state.value.x,
           y: state.value.y,
         };
-        emit("update:offset", offset);
+        emit('update:offset', offset);
       }
     };
 
     // useEventListener will set passive to `false` to eliminate the warning of Chrome
-    useEventListener("touchmove", onTouchMove, {
+    useEventListener('touchmove', onTouchMove, {
       target: rootRef,
     });
     const onTouchEnd = () => {
       dragging.value = false;
 
       nextTick(() => {
-        if (props.magnetic === "x") {
+        if (props.magnetic === 'x') {
           const nextX = closest([boundary.value.left, boundary.value.right], state.value.x);
           state.value.x = nextX;
         }
-        if (props.magnetic === "y") {
+        if (props.magnetic === 'y') {
           const nextY = closest([boundary.value.top, boundary.value.bottom], state.value.y);
           state.value.y = nextY;
         }
@@ -142,15 +142,15 @@ export default defineComponent({
             x: state.value.x,
             y: state.value.y,
           };
-          emit("update:offset", offset);
+          emit('update:offset', offset);
           if (prevX !== offset.x || prevY !== offset.y) {
-            emit("offsetChange", offset);
+            emit('offsetChange', offset);
           }
         }
       });
     };
     const onClick = (e: MouseEvent) => {
-      if (touch.isTap.value) emit("click", e);
+      if (touch.isTap.value) emit('click', e);
       else e.stopPropagation();
     };
     onMounted(() => {

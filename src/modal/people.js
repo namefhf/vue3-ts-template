@@ -1,5 +1,5 @@
-class People{
-  constructor(){
-    this.name = "1"
+class People {
+  constructor() {
+    this.name = '1';
   }
 }

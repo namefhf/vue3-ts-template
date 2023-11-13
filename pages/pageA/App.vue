@@ -2,11 +2,8 @@
   <div>page A</div>
   <p>{{ count }}</p>
 
-  <van-button type="success" @click="add">
-    成功按钮
-  </van-button>
+  <van-button type="success" @click="add"> 成功按钮 </van-button>
 </template>
-
 <script setup lang="ts">
 import img from '@/assets/img.png';
 import { ref, watch, computed, toValue } from 'vue';
