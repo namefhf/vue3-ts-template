@@ -26,4 +26,4 @@ const app = createApp(App);
 app.use(router).use(pinia).use(FoatingBubble).mount('#app');
 type person = [string, number];
 type a = person[number];
-const a = 1;
+const a = 2;
