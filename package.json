@@ -9,7 +9,11 @@
     "build:sit": "vue-tsc --noEmit && vite build --mode sit",
     "preview": "vite preview",
     "lint": "eslint --ext .vue,.js,.jsx,.ts,.tsx ./ --max-warnings 0",
-    "lint:fix": "eslint --ext .vue,.js,.jsx,.ts,.tsx ./ --max-warnings 0 --fix"
+    "lint:fix": "eslint --ext .vue,.js,.jsx,.ts,.tsx ./ --max-warnings 0 --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx}": "eslint --fix"
   },
   "dependencies": {
     "@types/lodash-es": "^4.17.11",
@@ -32,7 +36,9 @@
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "eslint": "^8.53.0",
     "eslint-plugin-vue": "^9.18.1",
+    "husky": "^8.0.0",
     "less": "^4.2.0",
+    "lint-staged": "^15.1.0",
     "postcss-px-to-viewport-8-plugin": "^1.2.3",
     "rollup-plugin-visualizer": "^5.9.2",
     "typescript": "^5.2.2",
