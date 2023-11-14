@@ -1,4 +1,6 @@
 <template>
+  <input v-model="text" type="text" />
+  {{ text }}
   <router-view v-slot="{ Component }">
     <!-- <keep-alive> -->
     <component :is="Component"></component>
@@ -36,7 +38,7 @@ import BPopup from '@/components/BPopup';
 // import JSX from "@/components/JSX.vue";
 import JSX from '@/components/jsx';
 import Uno from '@/views/Uno.vue';
-
+import debounceRef from '@/utils/debounceRef';
 let msg = ref('hello jsx');
 setTimeout(() => {
   msg.value = 'fuck';
@@ -59,6 +61,8 @@ function onClickCloseIcon() {
     console.log(1);
   }
 }
+
+const text = debounceRef('');
 </script>
 
 <style lang="less" scoped></style>
