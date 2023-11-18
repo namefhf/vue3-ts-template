@@ -22,7 +22,7 @@
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
     "prettier": "^3.1.0",
-    "unocss": "^0.57.4",
+    "unocss": "^0.57.5",
     "vant": "^4.7.3",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
@@ -34,7 +34,7 @@
     "@vant/auto-import-resolver": "^1.0.2",
     "@vitejs/plugin-vue": "^4.5.0",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "eslint": "^8.53.0",
+    "eslint": "^8.54.0",
     "eslint-plugin-vue": "^9.18.1",
     "husky": "^8.0.3",
     "less": "^4.2.0",
