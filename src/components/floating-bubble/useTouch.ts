@@ -37,12 +37,12 @@ export function useTouch() {
 
   const start = ((event: TouchEvent) => {
     reset();
-    startX.value = event.touches[0].clientX;
-    startY.value = event.touches[0].clientY;
+    startX.value = event.touches[0]?.clientX || 0;
+    startY.value = event.touches[0]?.clientY || 0;
   }) as EventListener;
 
   const move = ((event: TouchEvent) => {
-    const touch = event.touches[0];
+    const touch = event.touches[0] || { clientX: 0, clientY: 0 };
     // safari back will set clientX to negative number
     deltaX.value = (touch.clientX < 0 ? 0 : touch.clientX) - startX.value;
     deltaY.value = touch.clientY - startY.value;

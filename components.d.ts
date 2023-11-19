@@ -8,12 +8,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppProvider: typeof import('./src/components/AppProvider.vue')['default']
-    BPopup: typeof import('./src/components/BPopup.vue')['default']
-    JSX: typeof import('./src/components/JSX.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     VanButton: typeof import('vant/es')['Button']
-    VanPopup: typeof import('vant/es')['Popup']
-    VanPupup: typeof import('vant/es')['Pupup']
   }
 }
