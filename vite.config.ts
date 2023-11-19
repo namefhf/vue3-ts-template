@@ -99,7 +99,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
           // 用于命名代码拆分时创建的共享块的输出命名
           chunkFileNames: 'js/[name].[hash].js',
           // 用于输出静态资源的命名，[ext]表示文件扩展名
-          // assetFileNames: "[ext]/[name].[hash].[ext]",
+          assetFileNames: '[ext]/[name].[hash].[ext]',
         },
 
         // 不打包依赖
