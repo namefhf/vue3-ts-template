@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
     "@vant/auto-import-resolver": "^1.0.2",
     "@vitejs/plugin-vue": "^4.5.0",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
