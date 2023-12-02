@@ -65,4 +65,9 @@ function onClickCloseIcon() {
 const text = debounceRef('');
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+a {
+  display: inline;
+  width: 100px;
+}
+</style>
