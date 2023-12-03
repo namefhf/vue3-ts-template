@@ -45,14 +45,14 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@types/node": "^20.10.1",
+    "@types/node": "^20.10.2",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
     "@vant/auto-import-resolver": "^1.0.2",
     "@vitejs/plugin-vue": "^4.5.1",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "eslint": "^8.54.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-vue": "^9.19.2",
     "husky": "^8.0.3",
