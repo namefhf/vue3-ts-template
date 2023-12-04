@@ -1,6 +1,6 @@
-import { h, render } from "vue";
+import { h, render } from 'vue';
 export default {
   render() {
-    return h("h1", "demo");
+    return h('h1', 'demo');
   },
 };
