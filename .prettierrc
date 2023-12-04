@@ -31,5 +31,5 @@
 
   "vueIndentScriptAndStyle": false,
 
-  "endOfLine": "lf"
+  "endOfLine": "auto"
 }
