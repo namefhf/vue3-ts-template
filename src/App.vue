@@ -1,35 +1,13 @@
 <template>
-  <input v-model="text" type="text" />
-  {{ text }}
+  <!-- <input v-model="text" type="text" />
+  {{ text }} -->
+  <DefineModel v-model:count="count"></DefineModel>
   <router-view v-slot="{ Component }">
     <!-- <keep-alive> -->
     <component :is="Component"></component>
     <!-- </keep-alive> -->
   </router-view>
-  <AppProvider>
-    <!-- <Uno ></Uno> -->
-    <!-- <JSX :msg="msg" ref="jsxRef" @onClick="handleClick" /> -->
-    <!-- <p>我是来自子组件的值=={{ count }}</p> -->
-    <!-- <BPopup
-      v-model:show="show"
-      a="1"
-      round
-      position="bottom"
-      :style="{
-        padding: '20px',
-      }"
-      closeable
-      @click-close-icon="onClickCloseIcon"
-    >
-      123123123
-      <template #overlay-content>
-        <div>overlay-content</div>
-      </template>
-    </BPopup> -->
-    <!-- <FloatingBubble axis="xy" magnetic="x">
-      123
-    </FloatingBubble> -->
-  </AppProvider>
+  <AppProvider> </AppProvider>
 </template>
 <script setup lang="ts">
 import { type Ref } from 'vue';
@@ -39,6 +17,7 @@ import BPopup from '@/components/BPopup';
 import JSX from '@/components/jsx';
 import Uno from '@/views/Uno.vue';
 import debounceRef from '@/utils/debounceRef';
+import DefineModel from './components/DefineModel.vue';
 let msg = ref('hello jsx');
 setTimeout(() => {
   msg.value = 'fuck';
