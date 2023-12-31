@@ -8,6 +8,12 @@ dependencies:
   '@types/lodash-es':
     specifier: ^4.17.12
     version: 4.17.12
+  '@unocss/reset':
+    specifier: ^0.58.2
+    version: 0.58.2
+  '@vant/use':
+    specifier: ^1.6.0
+    version: 1.6.0(vue@3.4.1)
   '@vueuse/core':
     specifier: ^10.7.1
     version: 10.7.1(vue@3.4.1)
@@ -1328,6 +1334,10 @@ packages:
 
   /@unocss/reset@0.57.7:
     resolution: {integrity: sha512-oN9024WVrMewGbornnAPIpzHeKPIfVmZ5IsZGilWR761TnI5jTjHUkswsVoFx7tZdpCN2/bqS3JK/Ah0aot3NQ==}
+    dev: false
+
+  /@unocss/reset@0.58.2:
+    resolution: {integrity: sha512-ZzskZzrs7fPoKWrSpF1vehIr8TI7u4eS+MSurE0qUXatg0/nsXAZvaFYu0obu1kWrmnHyzA7G+m6LMX1h1tT7Q==}
     dev: false
 
   /@unocss/rule-utils@0.57.7:
