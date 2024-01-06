@@ -11,6 +11,7 @@ import viteCompression from 'vite-plugin-compression';
 import pptv from 'postcss-px-to-viewport-8-plugin';
 import path, { resolve } from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
+import VueDevTools from 'vite-plugin-vue-devtools';
 // https://vitejs.dev/config/
 const load_pptv = pptv({
   viewportWidth: 375, // UI设计稿的宽度
@@ -82,6 +83,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
           // },
         ],
       }),
+      VueDevTools(),
     ],
     build: {
       rollupOptions: {
