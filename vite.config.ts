@@ -90,7 +90,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         /*多页打包配置*/
         input: {
           main: resolve(__dirname, 'index.html'),
-          pageA: resolve(__dirname, 'pages/pageA/index.html'),
+          pageA: resolve(__dirname, 'pages/pageA/index.html'), //http://localhost:5173/pages/pageA/
         },
         output: {
           manualChunks: {
