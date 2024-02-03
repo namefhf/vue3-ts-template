@@ -8,6 +8,7 @@
     <!-- </keep-alive> -->
   </router-view>
   <AppProvider> </AppProvider>
+  <Bubble></Bubble>
 </template>
 <script setup lang="ts">
 import { type Ref } from 'vue';
@@ -18,6 +19,7 @@ import JSX from '@/components/jsx';
 import Uno from '@/views/Uno.vue';
 import debounceRef from '@/utils/debounceRef';
 import DefineModel from './components/DefineModel.vue';
+import Bubble from './components/Bubble.vue';
 let msg = ref('hello jsx');
 setTimeout(() => {
   msg.value = 'fuck';

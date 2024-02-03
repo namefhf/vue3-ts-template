@@ -4,10 +4,10 @@
   <van-button type="danger" @click="addCount">
     {{ count }}
   </van-button>
-  <Suspense>
+  <!-- <Suspense>
     <AsyncComponent></AsyncComponent>
     <template #fallback> loading... </template>
-  </Suspense>
+  </Suspense> -->
 </template>
 
 <script setup lang="ts">
