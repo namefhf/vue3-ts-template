@@ -1,9 +1,9 @@
 <template>
   <div>home</div>
-  <van-button type="primary" @click="handleClick"> go about </van-button>
+  <!-- <van-button type="primary" @click="handleClick"> go about </van-button>
   <van-button type="danger" @click="addCount">
     {{ count }}
-  </van-button>
+  </van-button> -->
   <!-- <Suspense>
     <AsyncComponent></AsyncComponent>
     <template #fallback> loading... </template>

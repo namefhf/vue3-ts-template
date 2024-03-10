@@ -7,21 +7,11 @@ import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from '@vant/auto-import-resolver';
 import { Plugin as importToCDN } from 'vite-plugin-cdn-import';
 import viteCompression from 'vite-plugin-compression';
-// import pptv, { AcceptedPlugin } from "postcss-px-to-viewport-8-plugin";
-import pptv from 'postcss-px-to-viewport-8-plugin';
+
 import path, { resolve } from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
 import VueDevTools from 'vite-plugin-vue-devtools';
 // https://vitejs.dev/config/
-const load_pptv = pptv({
-  viewportWidth: 375, // UI设计稿的宽度
-  propList: ['*'],
-  selectorBlackList: ['ignore-'],
-  exclude: [/node_modules/], // 设置忽略文件，用正则做目录名匹配
-  unitPrecision: 6, // 转换后的精度，即小数点位数
-  minPixelValue: 1, // 默认值1，小于或等于1px则不进行转换
-  replace: true, // 是否转换后直接更换属性值
-});
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd(), '');
 
@@ -88,10 +78,10 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
     build: {
       rollupOptions: {
         /*多页打包配置*/
-        input: {
-          main: resolve(__dirname, 'index.html'),
-          pageA: resolve(__dirname, 'pages/pageA/index.html'), //http://localhost:5173/pages/pageA/
-        },
+        // input: {
+        //   main: resolve(__dirname, 'index.html'),
+        //   pageA: resolve(__dirname, 'pages/pageA/index.html'), //http://localhost:5173/pages/pageA/
+        // },
         output: {
           manualChunks: {
             vue: ['vue'],
@@ -120,7 +110,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         },
       },
       postcss: {
-        plugins: [load_pptv],
+        plugins: [],
       },
     },
     server: {
