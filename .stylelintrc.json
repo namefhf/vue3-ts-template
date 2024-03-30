@@ -3,13 +3,12 @@
   "plugins": ["stylelint-order", "stylelint-prettier"],
   "overrides": [
     {
-      "files": ["**/*.(css|html|vue)"],
+      "files": ["**/*.{htm,html,vue}"],
       "customSyntax": "postcss-html"
     },
     {
-      "files": ["*.less", "**/*.less"],
-      "customSyntax": "postcss-less",
-      "extends": ["stylelint-config-standard", "stylelint-config-recommended-vue"]
+      "files": ["**/*.{css,less}"],
+      "customSyntax": "postcss-less"
     }
   ],
   "rules": {
@@ -49,7 +48,7 @@
       }
     ],
     "no-empty-source": null,
-    "string-quotes": null,
+
     "named-grid-areas-no-invalid": null,
     "no-descending-specificity": null,
     "font-family-no-missing-generic-family-keyword": null,
