@@ -17,8 +17,7 @@ import 'vant/es/notify/style';
 
 // ImagePreview
 import 'vant/es/image-preview/style';
-// import ElementPlus from "element-plus";
-// import "element-plus/dist/index.css";
+
 import { createPinia } from 'pinia';
 const pinia = createPinia();
 
