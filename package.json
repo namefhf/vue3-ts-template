@@ -47,7 +47,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.6",
+    "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
     "@typescript-eslint/parser": "^7.6.0",
     "@vant/auto-import-resolver": "^1.1.0",
@@ -70,7 +70,7 @@
     "stylelint-config-standard": "^36.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-prettier": "^5.0.0",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-define-options": "^1.4.3",
@@ -78,7 +78,7 @@
     "vite-plugin-cdn-import": "^0.3.5",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-style-import": "^2.0.0",
-    "vite-plugin-vue-devtools": "^7.0.25",
-    "vue-tsc": "^2.0.11"
+    "vite-plugin-vue-devtools": "^7.0.27",
+    "vue-tsc": "^2.0.13"
   }
 }
