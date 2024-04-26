@@ -43,13 +43,13 @@
     "prettier": "^3.2.5",
     "unocss": "^0.58.9",
     "vant": "^4.8.11",
-    "vue": "^3.4.23",
+    "vue": "^3.4.25",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
-    "@typescript-eslint/eslint-plugin": "^7.7.0",
-    "@typescript-eslint/parser": "^7.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
     "@vant/auto-import-resolver": "^1.1.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
@@ -62,7 +62,7 @@
     "lint-staged": "^15.2.2",
     "postcss-html": "^1.6.0",
     "rollup-plugin-visualizer": "^5.12.0",
-    "stylelint": "^16.3.1",
+    "stylelint": "^16.4.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-config-recommended-less": "^3.0.1",
@@ -74,11 +74,11 @@
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-define-options": "^1.4.3",
-    "vite": "^5.2.9",
+    "vite": "^5.2.10",
     "vite-plugin-cdn-import": "^0.3.5",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-style-import": "^2.0.0",
-    "vite-plugin-vue-devtools": "^7.0.27",
-    "vue-tsc": "^2.0.13"
+    "vite-plugin-vue-devtools": "^7.1.2",
+    "vue-tsc": "^2.0.14"
   }
 }
