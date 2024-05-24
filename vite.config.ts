@@ -84,7 +84,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         // },
         output: {
           manualChunks: {
-            vue: ['vue'],
+            vue: ['vue', 'vue-router', 'pinia'],
           },
           // 用于从入口点创建的块的打包输出格式[name]表示文件名,[hash]表示该文件内容hash值
           entryFileNames: 'js/[name].[hash].js',
