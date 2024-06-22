@@ -1,0 +1,13 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import { name, version } from '~build/package';
+import now from '~build/time';
+import { sha, committer, commitMessage } from '~build/git';
+console.log(name);
+console.log(version);
+console.log(new Date(now).toLocaleString());
+console.log(committer);
+console.log(commitMessage);
+console.log(sha);
+createApp(App).use(router).mount('#app');

@@ -7,9 +7,4 @@
 </template>
 <script setup lang="ts"></script>
 
-<style lang="less" scoped>
-a {
-  display: inline;
-  width: 100px;
-}
-</style>
+<style lang="less"></style>

@@ -21,9 +21,5 @@ import 'vant/es/image-preview/style';
 import { createPinia } from 'pinia';
 const pinia = createPinia();
 
-import FoatingBubble from '../src/components/floating-bubble';
 const app = createApp(App);
-app.use(router).use(pinia).use(FoatingBubble).mount('#app');
-type person = [string, number];
-type a = person[number];
-const a = 2;
+app.use(router).use(pinia).mount('#app');

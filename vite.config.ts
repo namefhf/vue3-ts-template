@@ -7,6 +7,9 @@ import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from '@vant/auto-import-resolver';
 import { Plugin as importToCDN } from 'vite-plugin-cdn-import';
 import viteCompression from 'vite-plugin-compression';
+import pages from './pages.config';
+import { createMpaPlugin, createPages } from 'vite-plugin-virtual-mpa';
+import Info from 'unplugin-info/vite';
 
 import path, { resolve } from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
@@ -14,17 +17,7 @@ import VueDevTools from 'vite-plugin-vue-devtools';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd(), '');
-
   console.log('====build-env====', env.VITE_ENV_NAME);
-
-  const BASE_MAP = {
-    development: '/',
-    sit: 'https://www.sit.com/',
-    production: 'https://www.production.com/',
-  };
-
-  const base = BASE_MAP[env.VITE_ENV_NAME];
-  console.log('====base====', base);
   return {
     base: './',
     resolve: {
@@ -63,7 +56,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       }),
       viteCompression(),
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      visualizer({ open: true }) as any,
+      visualizer({ open: false }) as PluginOption,
       importToCDN({
         modules: [
           // {
@@ -74,6 +67,10 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         ],
       }),
       VueDevTools(),
+      createMpaPlugin({
+        pages: createPages(pages),
+      }),
+      Info(),
     ],
     build: {
       rollupOptions: {

@@ -1,52 +1,28 @@
 <template>
-  <div>home</div>
-  <!-- <van-button type="primary" @click="handleClick"> go about </van-button>
-  <van-button type="danger" @click="addCount">
-    {{ count }}
-  </van-button> -->
-  <!-- <Suspense>
-    <AsyncComponent></AsyncComponent>
-    <template #fallback> loading... </template>
-  </Suspense> -->
+  <div class="home-container h-100vh flex flex-col items-center justify-center">
+    <ul>
+      <li v-for="(page, index) in pages" :key="index" class="page-item m-2 p-1 w-20 text-center">
+        <a :href="page.name"> {{ page.name }}</a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineOptions({
-  name: 'VHome',
-});
-
-import AsyncComponent from '@/components/AsyncComponent.vue';
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
-
-const { count, addCount } = useCount();
-
-function useCount() {
-  const count = ref(0);
-
-  const addCount = () => {
-    count.value++;
-  };
-
-  watch(count, () => {
-    console.log(111);
-  });
-
-  return {
-    count,
-    addCount,
-  };
-}
-
-function handleClick() {
-  router.push({
-    name: 'about',
-    query: {
-      a: 1,
-    },
-  });
-}
+import { pages } from '../../pages.config';
 </script>
 
-<style scoped></style>
+<style lang="less" scoped>
+.home-container {
+  background-color: #dbd7caee;
+}
+
+.page-item {
+  border-radius: 10px;
+  background-color: #f6f6f7;
+
+  a {
+    color: #4d9375;
+  }
+}
+</style>
