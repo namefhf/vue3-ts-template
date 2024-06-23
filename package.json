@@ -34,25 +34,25 @@
   },
   "dependencies": {
     "@types/lodash-es": "^4.17.12",
-    "@unocss/reset": "^0.58.9",
+    "@unocss/reset": "^0.61.0",
     "@vant/use": "^1.6.0",
     "@vueuse/core": "^10.11.0",
     "i": "^0.3.7",
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
     "prettier": "^3.3.2",
-    "unocss": "^0.58.9",
+    "unocss": "^0.61.0",
     "vant": "^4.9.1",
-    "vue": "^3.4.29",
+    "vue": "^3.4.30",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.7",
+    "@types/node": "^20.14.8",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.0.5",
-    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
@@ -80,7 +80,7 @@
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-style-import": "^2.0.0",
     "vite-plugin-virtual-mpa": "^1.12.0",
-    "vite-plugin-vue-devtools": "^7.3.3",
-    "vue-tsc": "^2.0.21"
+    "vite-plugin-vue-devtools": "^7.3.4",
+    "vue-tsc": "^2.0.22"
   }
 }
