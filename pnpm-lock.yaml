@@ -133,8 +133,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)
       vite-plugin-cdn-import:
-        specifier: ^0.3.5
-        version: 0.3.5(rollup@4.13.2)
+        specifier: ^1.0.1
+        version: 1.0.1(rollup@4.13.2)(vite@5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1))
       vite-plugin-compression:
         specifier: ^0.5.1
         version: 0.5.1(vite@5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1))
@@ -1614,6 +1614,9 @@ packages:
   error-stack-parser-es@0.1.1:
     resolution: {integrity: sha512-g/9rfnvnagiNf+DRMHEVGuGuIBlCIMDFoTA616HaP2l9PlCjGjVhD98PNbVSJvmK4TttqT5mV5tInMhoFgi+aA==}
 
+  es-module-lexer@0.4.1:
+    resolution: {integrity: sha512-ooYciCUtfw6/d2w56UVeqHPcoCFAiJdz5XOkYpv/Txl1HMUozpXjz/2RIQgqwKdXNDPSF1W7mJCFse3G+HDyAA==}
+
   es-module-lexer@0.9.3:
     resolution: {integrity: sha512-1HQ2M2sPtxwnvOvT1ZClHyQDiggdNjURWpY2we6aMKCQiUVxTmVs2UYPLIrD84sS+kMdUwfBSylbJPwNnBrnHQ==}
 
@@ -2026,8 +2029,8 @@ packages:
     resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
     engines: {node: '>=0.10.0'}
 
-  is-reference@1.2.1:
-    resolution: {integrity: sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==}
+  is-reference@3.0.2:
+    resolution: {integrity: sha512-v3rht/LgVcsdZa3O2Nqs+NMowLOxeOm7Ay9+/ARQ2F+qEoANRcqrjAZKGN0v8ymUetZGgkp26LTnGT7H0Qo9Pg==}
 
   is-ssh@1.4.0:
     resolution: {integrity: sha512-x7+VxdxOdlV3CYpjvRLBv5Lo9OJerlYanjwFrPR9fuGPjCiNiCzFgAWpiLAohSbsnH4ZAys3SBh+hq5rJosxUQ==}
@@ -2616,10 +2619,10 @@ packages:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     hasBin: true
 
-  rollup-plugin-external-globals@0.6.1:
-    resolution: {integrity: sha512-mlp3KNa5sE4Sp9UUR2rjBrxjG79OyZAh/QC18RHIjM+iYkbBwNXSo8DHRMZWtzJTrH8GxQ+SJvCTN3i14uMXIA==}
+  rollup-plugin-external-globals@0.10.0:
+    resolution: {integrity: sha512-RXlupZrmn97AaaS5dWnktkjM+Iy+od0E+8L0mUkMIs3iuoUXNJebueQocQKV7Ircd54fSGGmkBaXwNzY05J1yQ==}
     peerDependencies:
-      rollup: ^2.25.0
+      rollup: ^2.25.0 || ^3.3.0 || ^4.1.4
 
   rollup-plugin-visualizer@5.12.0:
     resolution: {integrity: sha512-8/NU9jXcHRs7Nnj07PF2o4gjxmm9lXIrZ8r175bT9dK8qoLlvKTwRMArRCMgpMGlq8CTLugRvEmyMeMXIU2pNQ==}
@@ -3099,11 +3102,17 @@ packages:
     peerDependencies:
       vite: ^2.6.0 || ^3.0.0 || ^4.0.0 || ^5.0.0-0
 
-  vite-plugin-cdn-import@0.3.5:
-    resolution: {integrity: sha512-e1raoalfBiIhv+hnMeSp1UNjloDDBhHpeFxkwRRdPBmTdDRqdEEn8owUmT5u8UBSVCs4xN3n/od4a91vXEhXPQ==}
+  vite-plugin-cdn-import@1.0.1:
+    resolution: {integrity: sha512-lgjLxgwFSKvJLbqjVBirUZ0rQo00GpUGJzRpgQu8RyBw9LA7jaqG6fUMQzBC9qWmTGabPC3iOzwCcoi7PseRAQ==}
 
   vite-plugin-compression@0.5.1:
     resolution: {integrity: sha512-5QJKBDc+gNYVqL/skgFAP81Yuzo9R+EAf19d+EtsMF/i8kFUpNi3J/H01QD3Oo8zBQn+NzoCIFkpPLynoOzaJg==}
+    peerDependencies:
+      vite: '>=2.0.0'
+
+  vite-plugin-externals@0.6.2:
+    resolution: {integrity: sha512-R5oVY8xDJjLXLTs2XDYzvYbc/RTZuIwOx2xcFbYf+/VXB6eJuatDgt8jzQ7kZ+IrgwQhe6tU8U2fTyy72C25CQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: '>=2.0.0'
 
@@ -4960,6 +4969,8 @@ snapshots:
 
   error-stack-parser-es@0.1.1: {}
 
+  es-module-lexer@0.4.1: {}
+
   es-module-lexer@0.9.3: {}
 
   esbuild@0.21.5:
@@ -5417,7 +5428,7 @@ snapshots:
 
   is-plain-object@5.0.0: {}
 
-  is-reference@1.2.1:
+  is-reference@3.0.2:
     dependencies:
       '@types/estree': 1.0.5
 
@@ -5978,12 +5989,12 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup-plugin-external-globals@0.6.1(rollup@4.13.2):
+  rollup-plugin-external-globals@0.10.0(rollup@4.13.2):
     dependencies:
-      '@rollup/pluginutils': 4.2.1
-      estree-walker: 2.0.2
-      is-reference: 1.2.1
-      magic-string: 0.25.9
+      '@rollup/pluginutils': 5.1.0(rollup@4.13.2)
+      estree-walker: 3.0.3
+      is-reference: 3.0.2
+      magic-string: 0.30.10
       rollup: 4.13.2
 
   rollup-plugin-visualizer@5.12.0(rollup@4.13.2):
@@ -6544,11 +6555,13 @@ snapshots:
     dependencies:
       vite: 5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)
 
-  vite-plugin-cdn-import@0.3.5(rollup@4.13.2):
+  vite-plugin-cdn-import@1.0.1(rollup@4.13.2)(vite@5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)):
     dependencies:
-      rollup-plugin-external-globals: 0.6.1(rollup@4.13.2)
+      rollup-plugin-external-globals: 0.10.0(rollup@4.13.2)
+      vite-plugin-externals: 0.6.2(vite@5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1))
     transitivePeerDependencies:
       - rollup
+      - vite
 
   vite-plugin-compression@0.5.1(vite@5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)):
     dependencies:
@@ -6558,6 +6571,14 @@ snapshots:
       vite: 5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)
     transitivePeerDependencies:
       - supports-color
+
+  vite-plugin-externals@0.6.2(vite@5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)):
+    dependencies:
+      acorn: 8.11.3
+      es-module-lexer: 0.4.1
+      fs-extra: 10.1.0
+      magic-string: 0.25.9
+      vite: 5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)
 
   vite-plugin-inspect@0.8.4(rollup@4.13.2)(vite@5.3.2(@types/node@20.14.9)(less@4.2.0)(terser@5.31.1)):
     dependencies:

@@ -76,7 +76,7 @@
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-define-options": "^1.4.5",
     "vite": "^5.3.2",
-    "vite-plugin-cdn-import": "^0.3.5",
+    "vite-plugin-cdn-import": "^1.0.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-style-import": "^2.0.0",
     "vite-plugin-virtual-mpa": "^1.12.0",
