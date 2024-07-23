@@ -32,6 +32,6 @@
     "env.d.ts",
     "auto-imports.d.ts",
     "pages.config.ts"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  ]
+  // "references": [{ "path": "./tsconfig.node.json" }]
 }
