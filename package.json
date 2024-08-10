@@ -8,11 +8,12 @@
     "build": "vue-tsc --noEmit && vite build",
     "build:sit": "vue-tsc --noEmit && vite build --mode sit",
     "preview": "vite preview",
-    "lint:eslint": "eslint --ext .vue,.js,.jsx,.ts,.tsx ./ --max-warnings 0",
+    "lint:eslint": "eslint ./ --max-warnings 0",
     "lint:prettier": "prettier --write .",
     "lint:stylelint": "stylelint \"**/*.{vue,css,less,scss}\" --fix --cache --cache-location node_modules/.cache/stylelint/",
-    "lint:fix": "eslint --ext .vue,.js,.jsx,.ts,.tsx ./ --max-warnings 0 --fix",
-    "prepare": "husky install"
+    "lint:fix": "eslint ./ --max-warnings 0 --fix",
+    "prepare": "husky install",
+    "eslint-config-inspect": "npx @eslint/config-inspector@latest"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -37,7 +38,6 @@
     "@unocss/reset": "^0.61.9",
     "@vant/use": "^1.6.0",
     "@vueuse/core": "^10.11.1",
-    "i": "^0.3.7",
     "lodash-es": "^4.17.21",
     "pinia": "^2.2.1",
     "prettier": "^3.3.3",
@@ -47,13 +47,15 @@
     "vue-router": "^4.4.3"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.9.0",
     "@types/node": "^20.14.14",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.9.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.27.0",

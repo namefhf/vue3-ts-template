@@ -55,7 +55,6 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         /* options */
       }),
       viteCompression(),
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       visualizer({ open: false }) as PluginOption,
       importToCDN({
         modules: [
