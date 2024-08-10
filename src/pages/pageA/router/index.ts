@@ -15,6 +15,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'about',
     component: () => import('@/pages/pageA/views/About.vue'),
   },
+  {
+    path: '/pinia',
+    name: 'pinia',
+    component: () => import('@/pages/pageA/views/PiniaDemo.vue'),
+  },
 ];
 const router = createRouter({
   history: createWebHashHistory(),
