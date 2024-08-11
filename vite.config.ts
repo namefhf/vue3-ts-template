@@ -71,7 +71,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         pages: createPages(pages),
       }),
       Info(),
-      OptimizeExclude(),
+      // OptimizeExclude(),
     ],
     build: {
       rollupOptions: {

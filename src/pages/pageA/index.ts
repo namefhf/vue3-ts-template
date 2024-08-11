@@ -1,11 +1,25 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import '@unocss/reset/normalize.css';
+import 'uno.css';
 import router from './router';
 import { name, version } from '~build/package';
 import now from '~build/time';
 import { sha, committer, commitMessage } from '~build/git';
 import { createPinia } from 'pinia';
 const pinia = createPinia();
+// Toast
+import 'vant/es/toast/style';
+
+// Dialog
+import 'vant/es/dialog/style';
+
+// Notify
+import 'vant/es/notify/style';
+
+// ImagePreview
+import 'vant/es/image-preview/style';
+
 console.log(name);
 console.log(version);
 console.log(new Date(now).toLocaleString());
