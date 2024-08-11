@@ -10,6 +10,7 @@ import viteCompression from 'vite-plugin-compression';
 import pages from './pages.config';
 import { createMpaPlugin, createPages } from 'vite-plugin-virtual-mpa';
 import Info from 'unplugin-info/vite';
+import OptimizeExclude from 'vite-plugin-optimize-exclude';
 
 import path, { resolve } from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
@@ -70,6 +71,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         pages: createPages(pages),
       }),
       Info(),
+      OptimizeExclude(),
     ],
     build: {
       rollupOptions: {

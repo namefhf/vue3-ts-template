@@ -81,6 +81,7 @@
     "vite-plugin-cdn-import": "^1.0.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-externals": "^0.6.2",
+    "vite-plugin-optimize-exclude": "^0.0.1",
     "vite-plugin-style-import": "^2.0.0",
     "vite-plugin-virtual-mpa": "^1.12.1",
     "vite-plugin-vue-devtools": "^7.3.7",
