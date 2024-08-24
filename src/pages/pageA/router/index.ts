@@ -20,6 +20,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'pinia',
     component: () => import('@/pages/pageA/views/PiniaDemo.vue'),
   },
+  {
+    path: '/query',
+    name: 'query',
+    component: () => import('@/pages/pageA/views/Query.vue'),
+  },
 ];
 const router = createRouter({
   history: createWebHashHistory(),

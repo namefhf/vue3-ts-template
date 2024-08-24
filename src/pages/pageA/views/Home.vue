@@ -5,6 +5,7 @@
       <div class="flex flex-col items-center gap-2 pt-5">
         <van-button style="width: 200px" @click="router.push({ name: 'pinia' })">to pinia demo</van-button>
         <van-button style="width: 200px" @click="router.push({ name: 'about' })">to about</van-button>
+        <van-button style="width: 200px" @click="router.push({ name: 'query' })">@tanstack/query</van-button>
       </div>
     </Container>
   </div>

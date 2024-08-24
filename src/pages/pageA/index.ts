@@ -8,6 +8,7 @@ import now from '~build/time';
 import { sha, committer, commitMessage } from '~build/git';
 import { createPinia } from 'pinia';
 const pinia = createPinia();
+import { VueQueryPlugin } from '@tanstack/vue-query';
 // Toast
 import 'vant/es/toast/style';
 
@@ -26,4 +27,4 @@ console.log(new Date(now).toLocaleString());
 console.log(committer);
 console.log(commitMessage);
 console.log(sha);
-createApp(App).use(router).use(pinia).mount('#app');
+createApp(App).use(router).use(pinia).use(VueQueryPlugin).mount('#app');
