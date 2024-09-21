@@ -14,7 +14,8 @@
     "lint:fix": "eslint ./ --max-warnings 0 --fix",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
-    "eslint-config-inspect": "npx @eslint/config-inspector@latest"
+    "eslint-config-inspect": "npx @eslint/config-inspector@latest",
+    "clean": "rimraf ./node_modules"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -66,6 +67,7 @@
     "less": "^4.2.0",
     "lint-staged": "^15.2.10",
     "postcss-html": "^1.7.0",
+    "rimraf": "^6.0.1",
     "rollup-plugin-visualizer": "^5.12.0",
     "stylelint": "^16.9.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
