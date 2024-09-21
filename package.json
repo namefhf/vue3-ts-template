@@ -12,7 +12,7 @@
     "lint:prettier": "prettier --write .",
     "lint:stylelint": "stylelint \"**/*.{vue,css,less,scss}\" --fix --cache --cache-location node_modules/.cache/stylelint/",
     "lint:fix": "eslint ./ --max-warnings 0 --fix",
-    "prepare": "husky install",
+    "prepare": "husky",
     "eslint-config-inspect": "npx @eslint/config-inspector@latest"
   },
   "lint-staged": {
