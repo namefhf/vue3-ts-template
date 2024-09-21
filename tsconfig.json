@@ -5,7 +5,6 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "strict": true,
-    "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -19,7 +18,10 @@
       "@/*": ["src/*"]
     },
     "noEmit": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    // https://vuejs.org/guide/extras/render-function.html#jsx-type-inference
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
   },
   "include": [
     "src/**/*.ts",
