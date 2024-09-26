@@ -1,6 +1,14 @@
 import { Page } from 'vite-plugin-virtual-mpa';
 
 export const pages: Array<Page> = [
+  {
+    name: 'index',
+    template: 'index.html',
+    entry: '/src/main.ts',
+    data: {
+      title: 'This is index page',
+    },
+  },
   // http://localhost:5173/pageA
   {
     name: 'pageA',
