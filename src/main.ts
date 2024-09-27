@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import './style.css';
+import 'tailwindcss/tailwind.css';
+
 import App from './App.vue';
-import '@unocss/reset/normalize.css';
-import 'uno.css';
 import Container from '@/components/Container.vue';
 
 import router from './router';
