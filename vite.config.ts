@@ -14,10 +14,13 @@ import OptimizeExclude from 'vite-plugin-optimize-exclude';
 import path, { resolve } from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
 import VueDevTools from 'vite-plugin-vue-devtools';
+import { viteVConsole } from 'vite-plugin-vconsole';
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
+export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd(), '');
   console.log('====build-env====', env.VITE_ENV_NAME);
+  console.log('====mode====', mode);
+  console.log('====command====', command);
   return {
     base: './',
     resolve: {
@@ -68,6 +71,13 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       }),
       Info(),
       // OptimizeExclude(),
+      viteVConsole({
+        entry: [...pages.map((page) => path.resolve(page.entry!.slice(1)))],
+        enabled: mode === 'production',
+        config: {
+          maxLogNumber: 1000,
+        },
+      }),
     ],
     build: {
       rollupOptions: {

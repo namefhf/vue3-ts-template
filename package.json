@@ -44,6 +44,7 @@
     "lodash-es": "^4.17.21",
     "pinia": "^2.2.2",
     "vant": "^4.9.7",
+    "vconsole": "^3.15.1",
     "vue": "^3.5.8",
     "vue-router": "^4.4.5"
   },
@@ -57,6 +58,7 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
     "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -90,6 +92,7 @@
     "vite-plugin-externals": "^0.6.2",
     "vite-plugin-optimize-exclude": "^0.0.1",
     "vite-plugin-style-import": "^2.0.0",
+    "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-virtual-mpa": "^1.12.1",
     "vite-plugin-vue-devtools": "^7.4.6",
     "vue-tsc": "^2.1.6"
