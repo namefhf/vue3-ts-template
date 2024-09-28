@@ -108,6 +108,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       // },
     },
     server: {
+      open: 'index.html',
       // port: 3002,
       // host: "0.0.0.0",
       // proxy: {
