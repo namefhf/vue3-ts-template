@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
-    "build:sit": "vue-tsc --noEmit && vite build --mode sit",
     "preview": "vite preview",
     "lint:eslint": "eslint ./ --max-warnings 0",
     "lint:prettier": "prettier --write .",
