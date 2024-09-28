@@ -1,7 +1,6 @@
 import { defineConfig, loadEnv, UserConfig, ConfigEnv, type PluginOption } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import UnoCSS from 'unocss/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from '@vant/auto-import-resolver';
@@ -51,9 +50,6 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         // eslintrc: {
         //   enabled: true,
         // },
-      }),
-      UnoCSS({
-        /* options */
       }),
       viteCompression(),
       visualizer({ open: false }) as PluginOption,
@@ -107,11 +103,12 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
           javascriptEnabled: true,
         },
       },
-      postcss: {
-        plugins: [],
-      },
+      // postcss: {
+      //   plugins: [],
+      // },
     },
     server: {
+      open: 'index.html',
       // port: 3002,
       // host: "0.0.0.0",
       // proxy: {
