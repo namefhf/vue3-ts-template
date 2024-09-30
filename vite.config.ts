@@ -41,6 +41,8 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
         dts: true,
         imports: ['vue', 'vue-router'],
         resolvers: [VantResolver()],
+        vueTemplate: false,
+        viteOptimizeDeps: true,
 
         //插件会在项目根目录生成类型文件 .eslintrc-auto-import.json ，确保该文件在 eslint 配置中被 extends：
         // .eslintrc.js
@@ -50,8 +52,13 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
         //   ],
         // }
 
+        // eslint.config.js
+        //  languageOptions: { globals: { ...autoImport.globals } },
+
         // eslintrc: {
         //   enabled: true,
+        //   filepath: './.eslintrc-auto-import.mjs',
+        //   globalsPropValue: true,
         // },
       }),
       viteCompression(),
