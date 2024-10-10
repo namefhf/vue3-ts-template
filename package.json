@@ -3,6 +3,21 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "keywords": [
+    "vue",
+    "vue3",
+    "template",
+    "vite",
+    "typescript",
+    "multi page",
+    "mpa"
+  ],
+  "homepage": "https://github.com/namefhf/vue3-ts-template",
+  "bugs": "https://github.com/namefhf/vue3-ts-template/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namefhf/vue3-ts-template.git"
+  },
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
