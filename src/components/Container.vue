@@ -1,5 +1,5 @@
 <template>
-  <div class="container p-4 box-border">
+  <div class="common-container box-border p-4">
     <slot />
   </div>
 </template>
