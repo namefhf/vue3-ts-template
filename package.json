@@ -50,8 +50,8 @@
     ]
   },
   "dependencies": {
-    "@tanstack/vue-query": "^5.59.13",
-    "@tanstack/vue-query-devtools": "^5.59.13",
+    "@tanstack/vue-query": "^5.59.16",
+    "@tanstack/vue-query-devtools": "^5.59.16",
     "@types/lodash-es": "^4.17.12",
     "@vant/use": "^1.6.0",
     "@vueuse/core": "^11.1.0",
@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
-    "@types/node": "^22.7.9",
+    "@types/node": "^22.8.1",
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
@@ -105,8 +105,8 @@
     "vite-plugin-style-import": "^2.0.0",
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-virtual-mpa": "^1.12.1",
-    "vite-plugin-vue-devtools": "^7.5.3",
-    "vue-tsc": "^2.1.6"
+    "vite-plugin-vue-devtools": "^7.5.4",
+    "vue-tsc": "^2.1.8"
   },
   "engines": {
     "node": ">=20.10.0",
