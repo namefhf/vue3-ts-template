@@ -56,7 +56,7 @@
     "@vant/use": "^1.6.0",
     "@vueuse/core": "^11.1.0",
     "lodash-es": "^4.17.21",
-    "pinia": "^2.2.4",
+    "pinia": "^2.2.5",
     "vant": "^4.9.8",
     "vconsole": "^3.15.1",
     "vue": "^3.5.12",
@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
-    "@types/node": "^22.8.2",
+    "@types/node": "^22.8.4",
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
@@ -92,7 +92,7 @@
     "stylelint-prettier": "^5.0.2",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
-    "typescript-eslint": "^8.12.1",
+    "typescript-eslint": "^8.12.2",
     "unplugin-auto-import": "^0.18.3",
     "unplugin-info": "^1.2.1",
     "unplugin-vue-components": "^0.26.0",
@@ -105,7 +105,7 @@
     "vite-plugin-style-import": "^2.0.0",
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-virtual-mpa": "^1.12.1",
-    "vite-plugin-vue-devtools": "^7.5.4",
+    "vite-plugin-vue-devtools": "^7.5.6",
     "vue-tsc": "^2.1.8"
   },
   "engines": {
