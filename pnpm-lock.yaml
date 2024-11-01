@@ -159,6 +159,9 @@ importers:
       vite-plugin-optimize-exclude:
         specifier: ^0.0.1
         version: 0.0.1(vite@5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0))
+      vite-plugin-qrcode:
+        specifier: ^0.2.3
+        version: 0.2.3(vite@5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0))
       vite-plugin-style-import:
         specifier: ^2.0.0
         version: 2.0.0(vite@5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0))
@@ -2834,6 +2837,10 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
+  qrcode-terminal@0.12.0:
+    resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
+    hasBin: true
+
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
@@ -3389,6 +3396,12 @@ packages:
     resolution: {integrity: sha512-vRb2u5XlvNa51bt+mz6QS+UHns2tGi1Z9CHuaAnPOWiAtQCZEjavUf/56oRFXauj/0ROl2FvOJ2YFD1k6sGJNQ==}
     peerDependencies:
       vite: '>=2.0.0'
+
+  vite-plugin-qrcode@0.2.3:
+    resolution: {integrity: sha512-TFzhf20v29hnh2XEoZ2kxg8Ff/ui36pR7PGDaHaKEmsQaRagv31XacHxbw5O07HcC1Mkr4tKcYb+PFASSceHmw==}
+    engines: {node: ^14.13.1 || ^16.0.0 || >=18}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0 || ^5.0.0
 
   vite-plugin-style-import@2.0.0:
     resolution: {integrity: sha512-qtoHQae5dSUQPo/rYz/8p190VU5y19rtBaeV7ryLa/AYAU/e9CG89NrN/3+k7MR8mJy/GPIu91iJ3zk9foUOSA==}
@@ -6070,6 +6083,8 @@ snapshots:
 
   punycode@2.3.1: {}
 
+  qrcode-terminal@0.12.0: {}
+
   queue-microtask@1.2.3: {}
 
   read-cache@1.0.0:
@@ -6740,6 +6755,11 @@ snapshots:
 
   vite-plugin-optimize-exclude@0.0.1(vite@5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0)):
     dependencies:
+      vite: 5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0)
+
+  vite-plugin-qrcode@0.2.3(vite@5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0)):
+    dependencies:
+      qrcode-terminal: 0.12.0
       vite: 5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0)
 
   vite-plugin-style-import@2.0.0(vite@5.4.10(@types/node@22.8.4)(less@4.2.0)(terser@5.36.0)):

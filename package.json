@@ -102,6 +102,7 @@
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-externals": "^0.6.2",
     "vite-plugin-optimize-exclude": "^0.0.1",
+    "vite-plugin-qrcode": "^0.2.3",
     "vite-plugin-style-import": "^2.0.0",
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-virtual-mpa": "^1.12.1",

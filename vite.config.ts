@@ -15,6 +15,7 @@ import path, { resolve } from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
 import VueDevTools from 'vite-plugin-vue-devtools';
 import { viteVConsole } from 'vite-plugin-vconsole';
+import { qrcode } from 'vite-plugin-qrcode';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd(), '');
@@ -85,6 +86,7 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
           maxLogNumber: 1000,
         },
       }),
+      qrcode(),
     ],
     build: {
       rollupOptions: {
