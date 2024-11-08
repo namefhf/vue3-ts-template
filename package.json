@@ -29,7 +29,8 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
     "eslint-config-inspect": "npx @eslint/config-inspector@latest",
-    "clean": "rimraf ./node_modules"
+    "clean": "rimraf ./node_modules",
+    "test": "vitest"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -107,6 +108,7 @@
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-virtual-mpa": "^1.12.1",
     "vite-plugin-vue-devtools": "^7.6.3",
+    "vitest": "^2.1.4",
     "vue-tsc": "^2.1.10"
   },
   "engines": {
