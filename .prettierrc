@@ -52,7 +52,7 @@
     "^@/composable/(.*)$",
     "^@/pages/.*/utils/(.*)$",
     "^@/pages/.*/api/(.*)$",
-    "^@/pages/*./constants/(.*)$",
+    "^@/pages/.*/constants/(.*)$",
     "^@/pages/.*/composables/(.*)$",
     "^@/pages/.*/store/(.*)$",
     "^@/components/(.*)$",
