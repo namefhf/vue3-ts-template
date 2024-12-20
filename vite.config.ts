@@ -1,21 +1,21 @@
+import path, { resolve } from 'path';
 import { defineConfig, loadEnv, UserConfig, ConfigEnv, type PluginOption } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from '@vant/auto-import-resolver';
+import { visualizer } from 'rollup-plugin-visualizer';
+import AutoImport from 'unplugin-auto-import/vite';
+import Info from 'unplugin-info/vite';
+import Components from 'unplugin-vue-components/vite';
 import { Plugin as importToCDN } from 'vite-plugin-cdn-import';
 import viteCompression from 'vite-plugin-compression';
-import pages from './pages.config';
-import { createMpaPlugin, createPages } from 'vite-plugin-virtual-mpa';
-import Info from 'unplugin-info/vite';
 import OptimizeExclude from 'vite-plugin-optimize-exclude';
-
-import path, { resolve } from 'path';
-import { visualizer } from 'rollup-plugin-visualizer';
-import VueDevTools from 'vite-plugin-vue-devtools';
-import { viteVConsole } from 'vite-plugin-vconsole';
 import { qrcode } from 'vite-plugin-qrcode';
+import { viteVConsole } from 'vite-plugin-vconsole';
+import { createMpaPlugin, createPages } from 'vite-plugin-virtual-mpa';
+import VueDevTools from 'vite-plugin-vue-devtools';
+import pages from './pages.config';
+
 // https://vitejs.dev/config/
 export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd(), '');

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useQuery } from '@tanstack/vue-query';
 import { VueQueryDevtools } from '@tanstack/vue-query-devtools';
+
 const router = useRouter();
 
 const { data, isPending } = useQuery({

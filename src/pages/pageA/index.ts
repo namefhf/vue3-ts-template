@@ -1,24 +1,22 @@
 import { createApp } from 'vue';
-import 'tailwindcss/tailwind.css';
-import App from './App.vue';
-import router from './router';
-import { name, version } from '~build/package';
-import now from '~build/time';
-import { sha, committer, commitMessage } from '~build/git';
-import { createPinia } from 'pinia';
-const pinia = createPinia();
 import { VueQueryPlugin } from '@tanstack/vue-query';
-// Toast
-import 'vant/es/toast/style';
-
+import { createPinia } from 'pinia';
+import 'tailwindcss/tailwind.css';
 // Dialog
 import 'vant/es/dialog/style';
-
-// Notify
-import 'vant/es/notify/style';
-
 // ImagePreview
 import 'vant/es/image-preview/style';
+// Notify
+import 'vant/es/notify/style';
+// Toast
+import 'vant/es/toast/style';
+import { sha, committer, commitMessage } from '~build/git';
+import { name, version } from '~build/package';
+import now from '~build/time';
+import App from './App.vue';
+import router from './router';
+
+const pinia = createPinia();
 
 console.log(name);
 console.log(version);

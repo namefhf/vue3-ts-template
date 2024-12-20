@@ -19,6 +19,7 @@
 
 <script setup lang="ts">
 import { pages } from '../../../pages.config';
+
 const pagesFiltered = pages.filter((page) => page.name !== 'index');
 </script>
 
