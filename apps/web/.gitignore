@@ -24,7 +24,3 @@ dist-ssr
 *.sln
 *.sw?
 stats.html
-apps/docs/.vitepress/cache
-apps/web/*/dist
-packages/*/dist
-packages/*/types

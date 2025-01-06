@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "types": ["unplugin-vue-define-options/macros-global", "unplugin-info/client"],
+    "noUncheckedIndexedAccess": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    // https://vuejs.org/guide/extras/render-function.html#jsx-type-inference
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "pages/**/*.ts",
+    "pages/**/*.d.ts",
+    "pages/**/*.vue",
+    "env.d.ts",
+    "auto-imports.d.ts",
+    "pages.config.ts"
+  ]
+  // "references": [{ "path": "./tsconfig.node.json" }]
+}

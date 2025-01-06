@@ -1,0 +1,4 @@
+dist
+*.d.ts
+*.yaml
+.eslintrc-auto-import.mjs

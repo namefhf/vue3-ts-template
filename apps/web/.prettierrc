@@ -1,0 +1,62 @@
+{
+  "printWidth": 120,
+
+  "tabWidth": 2,
+
+  "useTabs": false,
+
+  "semi": true,
+
+  "singleQuote": true,
+
+  "quoteProps": "as-needed",
+
+  "jsxSingleQuote": false,
+
+  "trailingComma": "all",
+
+  "bracketSpacing": true,
+
+  "bracketSameLine": false,
+
+  "arrowParens": "always",
+
+  "requirePragma": false,
+
+  "insertPragma": false,
+
+  "proseWrap": "preserve",
+
+  "htmlWhitespaceSensitivity": "css",
+
+  "vueIndentScriptAndStyle": false,
+
+  "endOfLine": "auto",
+  "plugins": ["prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^path$",
+    "^vite$",
+    "^@vitejs/(.*)$",
+    "^vue$",
+    "^vue-router$",
+    "^@vueuse/core$",
+    "^zod$",
+    "^axios$",
+    "^@tanstack/vue-query$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/assets/(.*)",
+    "^@/api/(.*)$",
+    "^@/lib/(.*)$",
+    "^@/utils/(.*)$",
+    "^@/constants/(.*)$",
+    "^@/composable/(.*)$",
+    "^@/pages/.*/utils/(.*)$",
+    "^@/pages/.*/api/(.*)$",
+    "^@/pages/.*/constants/(.*)$",
+    "^@/pages/.*/composables/(.*)$",
+    "^@/pages/.*/store/(.*)$",
+    "^@/components/(.*)$",
+    "^@/pages/.*/components/(.*)$",
+    "^[./]"
+  ]
+}
