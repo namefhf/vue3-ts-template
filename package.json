@@ -99,7 +99,7 @@
     "unplugin-info": "^1.2.1",
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-define-options": "^1.5.5",
-    "vite": "^6.0.11",
+    "vite": "^6.1.0",
     "vite-plugin-cdn-import": "^1.0.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-externals": "^0.6.2",
