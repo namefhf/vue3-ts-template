@@ -44,7 +44,7 @@
     ],
     "*.{scss,less,styl,html}": [
       "prettier --write",
-      "stylelint --fix"
+      "stylelint --fix --allow-empty-input"
     ],
     "*.md": [
       "prettier --write"
