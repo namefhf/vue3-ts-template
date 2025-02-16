@@ -55,7 +55,7 @@
     "@tanstack/vue-query-devtools": "^5.66.0",
     "@types/lodash-es": "^4.17.12",
     "@vant/use": "^1.6.0",
-    "@vueuse/core": "^12.5.0",
+    "@vueuse/core": "^12.7.0",
     "lodash-es": "^4.17.21",
     "pinia": "^2.3.1",
     "vant": "^4.9.17",
@@ -66,7 +66,7 @@
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/node": "^22.13.1",
+    "@types/node": "^22.13.4",
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^4.1.1",
@@ -95,7 +95,7 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.0",
-    "unplugin-auto-import": "^19.0.0",
+    "unplugin-auto-import": "^19.1.0",
     "unplugin-info": "^1.2.1",
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-define-options": "^1.5.5",
@@ -110,7 +110,7 @@
     "vite-plugin-virtual-mpa": "^1.12.1",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vitest": "^3.0.5",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.2"
   },
   "engines": {
     "node": ">=20.10.0",
