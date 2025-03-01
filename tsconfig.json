@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "types": ["unplugin-vue-define-options/macros-global", "unplugin-info/client"],
+    "types": ["unplugin-info/client"],
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "paths": {
