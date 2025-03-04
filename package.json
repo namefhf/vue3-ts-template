@@ -51,8 +51,8 @@
     ]
   },
   "dependencies": {
-    "@tanstack/vue-query": "^5.66.11",
-    "@tanstack/vue-query-devtools": "^5.66.11",
+    "@tanstack/vue-query": "^5.67.1",
+    "@tanstack/vue-query-devtools": "^5.67.1",
     "@types/lodash-es": "^4.17.12",
     "@vant/use": "^1.6.0",
     "@vueuse/core": "^12.7.0",
@@ -66,7 +66,7 @@
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/node": "^22.13.8",
+    "@types/node": "^22.13.9",
     "@vant/auto-import-resolver": "^1.3.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^4.1.1",
@@ -80,7 +80,7 @@
     "lint-staged": "^15.4.3",
     "postcss": "^8.5.3",
     "postcss-html": "^1.8.0",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "rimraf": "^6.0.1",
     "rollup-plugin-visualizer": "^5.14.0",
@@ -93,7 +93,7 @@
     "stylelint-prettier": "^5.0.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.25.0",
+    "typescript-eslint": "^8.26.0",
     "unplugin-auto-import": "^19.1.1",
     "unplugin-info": "^1.2.1",
     "unplugin-vue-components": "^28.4.1",
@@ -108,7 +108,7 @@
     "vite-plugin-virtual-mpa": "^1.12.1",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vitest": "^3.0.7",
-    "vue-tsc": "^2.2.4"
+    "vue-tsc": "^2.2.8"
   },
   "engines": {
     "node": ">=20.10.0",
