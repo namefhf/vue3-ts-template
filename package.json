@@ -51,11 +51,11 @@
     ]
   },
   "dependencies": {
-    "@tanstack/vue-query": "^5.67.1",
-    "@tanstack/vue-query-devtools": "^5.67.1",
+    "@tanstack/vue-query": "^5.67.2",
+    "@tanstack/vue-query-devtools": "^5.67.2",
     "@types/lodash-es": "^4.17.12",
     "@vant/use": "^1.6.0",
-    "@vueuse/core": "^12.7.0",
+    "@vueuse/core": "^12.8.2",
     "lodash-es": "^4.17.21",
     "pinia": "^3.0.1",
     "vant": "^4.9.17",
@@ -64,7 +64,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
+    "@eslint/js": "^9.22.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^22.13.9",
     "@vant/auto-import-resolver": "^1.3.0",
@@ -72,7 +72,7 @@
     "@vitejs/plugin-vue-jsx": "^4.1.1",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "eslint-plugin-vue": "^10.0.0",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
@@ -97,7 +97,7 @@
     "unplugin-auto-import": "^19.1.1",
     "unplugin-info": "^1.2.1",
     "unplugin-vue-components": "^28.4.1",
-    "vite": "^6.2.0",
+    "vite": "^6.2.1",
     "vite-plugin-cdn-import": "^1.0.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-externals": "^0.6.2",
@@ -107,12 +107,12 @@
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-virtual-mpa": "^1.12.1",
     "vite-plugin-vue-devtools": "^7.7.2",
-    "vitest": "^3.0.7",
+    "vitest": "^3.0.8",
     "vue-tsc": "^2.2.8"
   },
   "engines": {
     "node": ">=20.10.0",
     "pnpm": ">=9.4.0"
   },
-  "packageManager": "pnpm@10.5.2"
+  "packageManager": "pnpm@10.6.1"
 }
