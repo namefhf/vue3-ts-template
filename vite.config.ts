@@ -36,31 +36,11 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
         resolvers: [VantResolver()],
       }),
       AutoImport({
-        //要想在项目中优雅地使用自动导入，还要解决以下两个编码的问题：
-        //TS 类型丢失，会导致 TS 编译报错
-        //插件会在项目根目录生成类型文件 auto-imports.d.ts ，确保该文件在 tsconfig 中被 include
         dts: true,
         imports: ['vue', 'vue-router'],
         resolvers: [VantResolver()],
         vueTemplate: false,
         viteOptimizeDeps: true,
-
-        //插件会在项目根目录生成类型文件 .eslintrc-auto-import.json ，确保该文件在 eslint 配置中被 extends：
-        // .eslintrc.js
-        // module.exports = {
-        //   extends: [
-        //     './.eslintrc-auto-import.json',
-        //   ],
-        // }
-
-        // eslint.config.js
-        //  languageOptions: { globals: { ...autoImport.globals } },
-
-        // eslintrc: {
-        //   enabled: true,
-        //   filepath: './.eslintrc-auto-import.mjs',
-        //   globalsPropValue: true,
-        // },
       }),
       viteCompression(),
       visualizer({ open: false }) as PluginOption,
@@ -90,24 +70,15 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
     ],
     build: {
       rollupOptions: {
-        /*多页打包配置*/
-        // input: {
-        //   main: resolve(__dirname, 'index.html'),
-        //   pageA: resolve(__dirname, 'pages/pageA/index.html'), //http://localhost:5173/pages/pageA/
-        // },
         output: {
           manualChunks: {
             vue: ['vue', 'vue-router', 'pinia'],
           },
-          // 用于从入口点创建的块的打包输出格式[name]表示文件名,[hash]表示该文件内容hash值
           entryFileNames: 'js/entry.[name].[hash].js',
-          // 用于命名代码拆分时创建的共享块的输出命名
           chunkFileNames: 'js/chunk.[name].[hash].js',
-          // 用于输出静态资源的命名，[ext]表示文件扩展名
           assetFileNames: '[ext]/[name].[hash].[ext]',
         },
 
-        // 不打包依赖
         // external: ["lodash-es"],
       },
     },
@@ -115,7 +86,6 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
       preprocessorOptions: {
         less: {
           modifyVars: {
-            /*全局less变量 */
             hack: `true; @import (reference) "${path.resolve('src/style/variables.less')}";`,
           },
           math: 'strict',
