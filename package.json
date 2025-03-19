@@ -55,7 +55,7 @@
     "@tanstack/vue-query-devtools": "^5.69.0",
     "@types/lodash-es": "^4.17.12",
     "@vant/use": "^1.6.0",
-    "@vueuse/core": "^12.8.2",
+    "@vueuse/core": "^13.0.0",
     "lodash-es": "^4.17.21",
     "pinia": "^3.0.1",
     "vant": "^4.9.18",
