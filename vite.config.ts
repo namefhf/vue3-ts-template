@@ -68,6 +68,9 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
       }),
       qrcode(),
     ],
+    optimizeDeps: {
+      include: ['vue', 'vue-router', 'pinia', '@tanstack/vue-query'],
+    },
     build: {
       rollupOptions: {
         output: {
