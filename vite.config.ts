@@ -41,6 +41,13 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
         resolvers: [VantResolver()],
         vueTemplate: false,
         viteOptimizeDeps: true,
+        dirs: [
+          './src/composables',
+          {
+            glob: './src/composables',
+            types: true, // If top level dirsScanOptions.types importing enabled, just only disable this directory
+          },
+        ],
       }),
       viteCompression(),
       visualizer({ open: false }) as PluginOption,

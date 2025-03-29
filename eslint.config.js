@@ -12,6 +12,7 @@ export default defineConfig(
     languageOptions: { globals: { ...globals.browser, ...globals.node, ...autoImport.globals } },
     extends: [pluginJs.configs.recommended, tseslint.configs.recommended, pluginVue.configs['flat/essential']],
     rules: {
+      'no-undef': 'off',
       'prefer-const': 'error',
       'prefer-template': 'error',
       '@typescript-eslint/no-unused-vars': 'off',
