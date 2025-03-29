@@ -6,7 +6,12 @@ interface Options {
   shallow?: boolean;
 }
 
-function useState<T>(initialValue: MaybeRefOrGetter<T>, options?: Options): [DeepReadonly<Ref<T>>, (value: T) => void] {
+type StateReturn<T, O extends Options> = [
+  O['readonly'] extends true ? DeepReadonly<Ref<T>> : Ref<T>,
+  (value: T) => void,
+];
+
+function useState<T, O extends Options = Options>(initialValue: MaybeRefOrGetter<T>, options?: O): StateReturn<T, O> {
   const { readonly = true, shallow = false } = options || {};
   const state = shallow ? shallowRef(toValue(initialValue)) : (ref(toValue(initialValue)) as Ref<T>);
 
@@ -14,6 +19,6 @@ function useState<T>(initialValue: MaybeRefOrGetter<T>, options?: Options): [Dee
     state.value = value;
   };
 
-  return [readonly ? VueReadonly(state) : state, setState];
+  return [readonly ? VueReadonly(state) : state, setState] as StateReturn<T, O>;
 }
 export default useState;
