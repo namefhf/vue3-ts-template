@@ -51,8 +51,8 @@
     ]
   },
   "dependencies": {
-    "@tanstack/vue-query": "^5.70.0",
-    "@tanstack/vue-query-devtools": "^5.70.0",
+    "@tanstack/vue-query": "^5.71.1",
+    "@tanstack/vue-query-devtools": "^5.71.1",
     "@types/lodash-es": "^4.17.12",
     "@vant/use": "^1.6.0",
     "@vueuse/core": "^13.0.0",
@@ -97,7 +97,7 @@
     "unplugin-auto-import": "^19.1.2",
     "unplugin-info": "^1.2.1",
     "unplugin-vue-components": "^28.4.1",
-    "vite": "^6.2.3",
+    "vite": "^6.2.4",
     "vite-plugin-cdn-import": "^1.0.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-externals": "^0.6.2",
