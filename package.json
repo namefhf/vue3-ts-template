@@ -34,7 +34,7 @@
     "create-page": "node scripts/createPage.mjs"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "*.{js,mjs,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ],
