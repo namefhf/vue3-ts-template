@@ -1,19 +1,31 @@
 <template>
-  <div class="flex h-screen flex-col items-center justify-center">
-    <p class="mb-2 text-xl font-extrabold text-[#09090B]">Vue multi page template</p>
-    <div class="text-slate-500">total:{{ pagesFiltered.length }}</div>
-    <ul>
-      <li
-        v-for="(page, index) in pagesFiltered"
-        :key="index"
-        class="m-2 w-40 rounded-lg border-2 border-solid border-gray-100 p-1 text-center"
-      >
-        <a :href="`${page.name}.html`">
-          <p class="text-[#09090B]">{{ page.desc }}</p>
-          <p class="text-neutral-500">{{ `${page.name}.html` }}</p>
+  <div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
+    <div class="max-w-4xl mx-auto">
+      <!-- Header Section -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-3">Vue Multi Page Template</h1>
+        <p class="text-lg text-gray-600">Total Pages: {{ pagesFiltered.length }}</p>
+      </div>
+
+      <!-- Pages Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a
+          v-for="(page, index) in pagesFiltered"
+          :key="index"
+          :href="`${page.name}.html`"
+          class="group block bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100"
+        >
+          <div class="p-6">
+            <h2 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+              {{ page.desc }}
+            </h2>
+            <p class="mt-2 text-sm text-gray-500 group-hover:text-blue-500">
+              {{ `${page.name}.html` }}
+            </p>
+          </div>
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
 
