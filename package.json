@@ -53,8 +53,8 @@
     ]
   },
   "dependencies": {
-    "@tanstack/vue-query": "^5.79.0",
-    "@tanstack/vue-query-devtools": "^5.79.0",
+    "@tanstack/vue-query": "^5.80.0",
+    "@tanstack/vue-query-devtools": "^5.80.0",
     "@types/lodash-es": "^4.17.12",
     "@vant/use": "^1.6.0",
     "@vueuse/core": "^13.3.0",
@@ -96,7 +96,7 @@
     "stylelint-prettier": "^5.0.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.0",
+    "typescript-eslint": "^8.33.1",
     "unplugin-auto-import": "^19.3.0",
     "unplugin-info": "^1.2.2",
     "unplugin-vue-components": "^28.7.0",
@@ -110,12 +110,12 @@
     "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-virtual-mpa": "^1.12.1",
     "vite-plugin-vue-devtools": "^7.7.6",
-    "vitest": "^3.1.4",
+    "vitest": "^3.2.0",
     "vue-tsc": "^2.2.10"
   },
   "engines": {
     "node": ">=20.10.0",
     "pnpm": ">=9.4.0"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.1"
 }
