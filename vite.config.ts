@@ -63,6 +63,12 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
       VueDevTools(),
       createMpaPlugin({
         pages: createPages(pages),
+        rewrites: [
+          {
+            from: /^\/$/,
+            to: '/index.html',
+          },
+        ],
       }),
       Info(),
       // OptimizeExclude(),
@@ -107,7 +113,7 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
       // },
     },
     server: {
-      open: 'index.html',
+      open: true,
       // port: 3002,
       // host: "0.0.0.0",
       // proxy: {
