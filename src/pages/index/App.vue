@@ -30,9 +30,12 @@
 </template>
 
 <script setup lang="ts">
+import { showLoading } from '@/components/Loading';
 import { pages } from '../../../pages.config';
 
 const pagesFiltered = pages.filter((page) => page.name !== 'index');
+
+showLoading({ duration: 1000 });
 </script>
 
 <style lang="less" scoped></style>
