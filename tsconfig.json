@@ -11,7 +11,8 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "types": ["unplugin-info/client"],
+    "types": ["vite/client", "unplugin-info/client"],
+    "allowJs": true,
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "paths": {
@@ -19,21 +20,10 @@
     },
     "noEmit": true,
     "allowImportingTsExtensions": true,
-    // https://vuejs.org/guide/extras/render-function.html#jsx-type-inference
     "jsx": "preserve",
     "jsxImportSource": "vue"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "pages/**/*.ts",
-    "pages/**/*.d.ts",
-    "pages/**/*.vue",
-    "env.d.ts",
-    "auto-imports.d.ts",
-    "pages.config.ts"
-  ]
-  // "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "env.d.ts", "auto-imports.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": ["node_modules", "dist", "**/*.js", "**/*.md", "src/**/*.md"]
 }

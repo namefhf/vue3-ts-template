@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
     "composite": true,
+    "skipLibCheck": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "target": "ESNext"
   },
-  "include": ["vite.config.ts", "pages.config.ts"]
+  "include": ["vite.config.ts", "pages.config.ts", "scripts/*.ts"]
 }
