@@ -3,7 +3,7 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "bundler",
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "types": ["vite/client", "unplugin-info/client"],
+    "types": ["node", "vite/client", "unplugin-info/client"],
     "allowJs": true,
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
@@ -23,7 +23,6 @@
     "jsx": "preserve",
     "jsxImportSource": "vue"
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "env.d.ts", "auto-imports.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules", "dist", "**/*.js", "**/*.md", "src/**/*.md"]
 }
