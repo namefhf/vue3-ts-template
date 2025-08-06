@@ -3,7 +3,9 @@ import { Page } from 'vite-plugin-virtual-mpa';
 interface ICustom {
   desc?: string;
 }
-export const pages: Array<Page & ICustom> = [
+export type pageType = Page & ICustom;
+
+export const pages: Array<pageType> = [
   {
     name: 'index',
     template: 'public/index.html',

@@ -31,9 +31,10 @@
 
 <script setup lang="ts">
 import { showLoading } from '@/components/Loading';
+import { pageType } from '../../../pages.config';
 import { pages } from '../../../pages.config';
 
-const pagesFiltered = pages.filter((page) => page.name !== 'index');
+const pagesFiltered = pages.filter((page: pageType) => page.name !== 'index');
 
 showLoading({ duration: 1000 });
 </script>
