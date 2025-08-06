@@ -8,7 +8,7 @@ import { customRef } from 'vue';
  * @return {*}
  */
 export const debounceRef = function (value: any, delay = 1000) {
-  let timer: NodeJS.Timeout;
+  let timer: ReturnType<typeof setTimeout> | undefined;
   return customRef((track, trigger) => {
     return {
       get() {
