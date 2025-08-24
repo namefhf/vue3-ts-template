@@ -3,8 +3,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "vue.codeActions.enabled": false,
   "stylelint.enable": true,
   "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
   "eslint.enable": true,
